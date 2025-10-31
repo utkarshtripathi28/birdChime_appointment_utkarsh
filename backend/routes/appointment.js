@@ -1,4 +1,4 @@
-const usersController = require("../controllers/users");
+const ctrl = require("../controllers/appointment");
 const routes = require("express").Router();
 
 routes.get("/", ctrl.listAll);

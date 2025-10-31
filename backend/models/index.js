@@ -39,7 +39,7 @@ Object.keys(db).forEach((modelName) => {
 sequelize
   .authenticate()
   .then(() => {
-    console.log("JobLo db connected..");
+    console.log("BirdChime db connected..");
   })
   .catch((err) => {
     console.log(err);

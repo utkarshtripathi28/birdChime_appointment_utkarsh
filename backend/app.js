@@ -1,7 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const IORedis = require("ioredis");
-const { Queue, Worker } = require("bullmq");
 const PORT = process.env.PORT || 3000;
 const db = require("./models");
 let path = require("path");
@@ -18,6 +15,6 @@ app.use("/api/v1/appointment", routes.appointment);
 const HOST = config.HOST;
 app.listen(PORT, HOST, () => {
   console.log(
-    `Job Lo backend server is running on port http://${HOST}:${PORT}`
+    `BirdChime backend server is running on port http://${HOST}:${PORT}`
   );
 });

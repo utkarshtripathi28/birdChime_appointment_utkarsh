@@ -1,7 +1,6 @@
 // Appointment
 "use strict";
 const { Model } = require("sequelize");
-const utils = require("../utils/generateUniqueId");
 module.exports = (sequelize, DataTypes) => {
   class appointment extends Model {
     /**
